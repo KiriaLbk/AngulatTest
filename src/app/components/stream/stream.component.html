@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="title">
+    Первое задание
+  </div>
+  <div class="streams_content">
+    <div class="count">
+      <button (click)="startStream()">Старт</button>
+      <span> Сумма : {{ num }}</span>
+    </div>
+    <div class="streams">
+      <div *ngFor="let item of arrs | arr" class="stream">
+        <span *ngIf="item === '1'">Первый поток</span>
+        <span *ngIf="item === '2'">Второй поток</span>
+        <span *ngIf="item === '3'">Третий поток</span>
+        <ul>
+          <li *ngFor="let id of arrs[item]" class="id">
+            {{ id }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

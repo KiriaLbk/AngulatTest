@@ -1,0 +1,50 @@
+.container {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  .title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .streams_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 17px;
+    border-bottom: 1px solid #000000;
+    .streams {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .stream {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        span {
+          font-weight: bold;
+        }
+        ul {
+          width: 50px;
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+    .count {
+      height: 40px;
+      display: flex;
+      button {
+        margin: 0px 100px;
+        background-color: #ffffff;
+        color: #000000;
+        height: 30px;
+        font-weight: 700;
+        border: 1px solid #000000;
+      }
+    }
+  }
+}
